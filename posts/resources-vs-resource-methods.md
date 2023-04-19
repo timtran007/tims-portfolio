@@ -1,6 +1,6 @@
 ---
 title: 'Rails Routing - resources vs. resource Methods'
-date: '2022-01-08'
+date: '2023-01-08'
 ---
 
 As I am learning more and more about Ruby and Rails, I am beginning unfold CRUD actions and their related behavior in /config/routes.rb file.
