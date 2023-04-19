@@ -1,6 +1,6 @@
 ---
 title: 'Rails Routing - resources vs. resource Methods'
-date: '2022-03-23'
+date: '2023-03-23'
 ---
 
 I am officially graduated from Flatiron School coding bootcamp! But the work is never finished ;)

@@ -1,6 +1,6 @@
 ---
 title: 'Deploying a React-Rails App on Render'
-date: '2022-03-14'
+date: '2023-03-14'
 ---
 
 I can't believe it! I am almost done with my time at Flatiron School, there is a sense of relief, but at the same time thoughts of what the job search is going to be like has been flooding my mind lately. 

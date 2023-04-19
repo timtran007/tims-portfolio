@@ -1,6 +1,6 @@
 ---
 title: 'Under the Hood: Front End React Form Submission Persisting to a Rails Back End'
-date: '2022-02-11'
+date: '2023-02-11'
 ---
 
 One of the most important things I have learned so far during my journey into Software Development, is that the ability to talk about your code is a very crucial aspect of being a developer. 
