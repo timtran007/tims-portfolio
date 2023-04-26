@@ -42,7 +42,7 @@ export default function Home({ allPostsData }) {
                 </span>
             </h2>
             <p class='py-4 text-gray-600 max-w-[70%] m-auto'>
-              Driven full stack developer looking to leverage 6+ years of experience in marketing to collaborate with various teams to ship products. With keen attention to detail and a passion for exploring best practices to help shape quality code, while solving interesting problems with technology.
+              I am a software developer looking to leverage 6+ years of experience in marketing to collaborate with various teams to ship products. With keen attention to detail and a passion for exploring best practices to help shape quality code, while solving interesting problems with technology.
             </p>
             <div className='flex items-center justify-between max-w-[330px] m-auto py-4'>
               <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 eas-in duration-300'>
