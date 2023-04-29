@@ -1,5 +1,5 @@
 ---
-title: 'Rails Routing - resources vs. resource Methods'
+title: 'Swapping Databases: SQLite to PostgreSQL for Deployment'
 date: '2023-03-23'
 ---
 
