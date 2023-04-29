@@ -27,7 +27,7 @@ export default function Navbar() {
                     <Link href='/skills'>
                         <li className='ml-10 text-sm uppercase hover:border-b'>Skills</li>
                     </Link>
-                    <Link href='/'>
+                    <Link href='/projects'>
                         <li className='ml-10 text-sm uppercase hover:border-b'>Projects</li>
                     </Link>
                     <Link href='/blog'>
@@ -69,7 +69,7 @@ export default function Navbar() {
                         <Link href='/skills'>
                             <li className='py-4 text-sm'>Skills</li>
                         </Link>
-                        <Link href='/'>
+                        <Link href='/projects'>
                             <li className='py-4 text-sm'>Projects</li>
                         </Link>
                         <Link href='/blog'>
