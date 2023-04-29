@@ -9,14 +9,16 @@ import { BsFillPersonLinesFill } from 'react-icons/bs'
 
 export default function Home({ allPostsData }) {
   return (
+    <>
     <Layout home>
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <div className='w-full h-screen text-center'>
-        <div className='max-w--[1240px] w-full h-full mx-auto p-2 flex justify-center items-center'>
+    </Layout>
+      <div className='w-full md:h-screen lg:h-screen text-center'>
+        <div className='max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center'>
           <div>
-            <p className='uppercase text-sm tracking-widest text-gray-600'>
+            <p className='pt-20 uppercase text-sm tracking-widest text-gray-600'>
                 Let's Build Something Together
             </p>
             <h1 className='py-4 text-gray-700'>
@@ -61,6 +63,7 @@ export default function Home({ allPostsData }) {
           </div>
         </div>
     </div>
-    </Layout>
+    
+  </>
   );
 }
