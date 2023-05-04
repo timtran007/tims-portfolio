@@ -2,23 +2,29 @@ import Layout from "../../components/layout";
 import { getAllPostIds, getPostData } from "../../lib/posts";
 import Head from "next/head";
 import Date from "../../components/date";
-import utilStyles from '../../styles/utils.module.css';
+import Markdown from "markdown-to-jsx"
 
 
 export default function Post({ postData }) {
     return (
+        <div>
         <Layout>
             <Head>
                 <title>{postData.title}</title>
             </Head>
-            <article>
-            <h1 className={utilStyles.headingXl}>{postData.title}</h1>
-            <div className={utilStyles.lightText}>
+        </Layout>
+            <div className="w-full p-20 items-center">
+            <h1 className='py-8 text-center'>{postData.title}</h1>
+            <div className="px-16">
+            <div className='text-center italic'>
                 <Date dateString={postData.date} />
             </div>
-            <div dangerouslySetInnerHTML={{__html: postData.contentHtml }} />
+            <article className="prose prose-xl max-w-none">
+                <Markdown>{postData.contentHtml}</Markdown>
             </article>
-        </Layout>
+            </div>
+            </div>
+        </div>
     )
 }
 
