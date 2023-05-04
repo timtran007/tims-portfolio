@@ -31,7 +31,7 @@ Let's go ahead and finish up by generating a controller to handle our routes.
 
 `rails g controller birds`
 
-##Creating Routes By Hand
+## Creating Routes By Hand
 Let's go ahead and dive into our routes.rb file and create the routes that we want for our birds controller to provide a JSON rendered response.
 
 ```
@@ -45,7 +45,7 @@ end
 We can do a quick check to see if this works with:
 `rails routes`
 
-##Creating the Controller Actions
+## Creating the Controller Actions
 Now let's quickly set up our controller actions to handle our RESTful routes of index and show.
 
 ```
@@ -80,12 +80,12 @@ And for our RESTful route for /birds/:id, we should see:
 
 ![Image description](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/6g5jqjgln3gi4lpx07uh.png)
 
-##Let's Automate Our RESTful Routes With resource
+## Let's Automate Our RESTful Routes With resource
 Great! Now let's refactor our code to automate the Routes.
 
 We can do this by going into our config directory and routes.rb file
 
-```
+```ruby
 Rails.application.routes.draw do
   #manual way to create our route
     #get 'birds', to: 'birds#index'
@@ -103,7 +103,7 @@ Oh no!! We only have one route for our birds controller with the action of show.
 
 Why do we only have one route created?
 
-##'resource' Method vs. 'resources' Method
+## 'resource' Method vs. 'resources' Method
 
 Like I mentioned before... attention to detail is the key here. By not adding an 's' to the end of 'resource' method we only generate the show action for the birds controller in the code above.
 
@@ -127,7 +127,7 @@ We get 6 RESTful Routes that actually makes sense! Two for our `/birds` and four
 
 ![Image description](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/pdcpcakcouy9u0s0p3nb.png)
 
-##Conclusion
+## Conclusion
 We can solve the problem of creating our birds controller action of index and show by simply writing:
 
 `resources :birds, only: [:index, :show]`
@@ -136,7 +136,7 @@ Rails provides easy ways to automate tedious tasks such as creating routes, but 
 
 The devil is in the details, as I struggled to pass my rspec tests all because I left out the 's' in resources. I hope you can learn from my experience of troubleshooting the automation of creating RESTful routes.
 
-#TLDR;
+# TLDR;
 Use `resources :controllers_name` and not `resource :controllers_name` when automating the creation of RESTful routes.
 
 

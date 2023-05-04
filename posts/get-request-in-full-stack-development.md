@@ -42,7 +42,7 @@ const [dogs, setDogs] = useState([])
 useEffect(() => {
   fetch('http://localhost:9292/dogs')
   .then(resp => resp.json())
-  .then(data => setDogs(data)
+  .then(data => setDogs(data))
 }, [])
 ```
 
@@ -50,7 +50,7 @@ In the code above, we are essentially creating a GET fetch request that pulls in
 
 This is pretty basic enough! So let's go ahead and take a look at our application_controller.rb file in the back end application to see how GET fetch request is mapped out. 
 
-```
+```ruby
 #application_controller.rb
 
 class ApplicationController < Sinatra::Base
@@ -90,7 +90,7 @@ So if we want to Read from both models and run GET once in our Front End and sav
 
 Let's take a look at our mapped out GET request for /dogs
 
-```
+```ruby
 #application_controller.rb
 
 class ApplicationController < Sinatra::Base

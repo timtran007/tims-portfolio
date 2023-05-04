@@ -71,5 +71,5 @@ rails db:create db:migrate db:reset
 
 You are all set! Now you can follow my previous [post] (https://dev.to/timtran007/deploying-a-react-rails-app-on-render-4lo4) on deploying a Rails-React app using Render!
 
-##Conclusion
+## Conclusion
 Now enjoy the luxury of deploying your projects on Render by converting your SQLite3 database to PostgreSQL.

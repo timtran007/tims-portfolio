@@ -154,7 +154,7 @@ function Nav(){
 
 Again, client-side routing can provide an amazing experience for users navigating through a Single-Page Application with "lightning fast" speeds rendering various components based on routes. 
 
-##TLDR;
+## TLDR;
 
 ### Using BrowserRouter, Switch & Route Components
 Use BrowserRouter component to wrap the top-level component where you want to use Routes.

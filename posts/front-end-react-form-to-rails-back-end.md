@@ -71,20 +71,22 @@ Once the model interacts with the database, a response is sent  back to the cont
 
 Now that we have a high-level overview of the MVC framework, let's dive into what is happening under the hood with our fetch post request.
 
-###Step 1:
+### Step 1:
 A fetch request is made with the following information: the endpoint, method, header and body in JSON.stringify format. 
 
 And this request is sent to the back end. In the case of my project the back end is built using Ruby on Rails.
 
-``fetch('/reviews', {
+```
+fetch('/reviews', {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
             }, 
             body: JSON.stringify(formData)
-``
+})
+```
 
-###Step 2:
+### Step 2:
 The request is passed to the config/routes.rb file to make sure that a route has been created for the method, end point, controller and its respective action.
 
 Within my project I have the following in the routes:
@@ -110,7 +112,7 @@ To check your routes you can simply type into your terminal:
 
 You can learn more about resources method [here](https://dev.to/timtran007/rails-routing-resources-vs-resource-gel)!
 
-###Step 3:
+### Step 3:
 Now the requests travels to the controller and goes through the create action.
 
 ```
@@ -125,10 +127,10 @@ Our action will not work unless a user has signed into their account. If a user 
 
 So, luckily for us, we are logged in, which means that our code is taking a look at the users table to find the id attribute correlated to the user's sessions user_id hash value.
 
-###Step 4a:
+### Step 4a:
 Continuing to follow the order of the code stack, we have the logged in user create a review, which means that the request is now sent to the review model to check the associations and validation for creating a new review record in our database.
 
-###Step 4b:
+### Step 4b:
 But before we can use mass assign the attributes to create the record through this request, we must use strong_params, which is defined within the private method of review_params, to permit the attributes for mass assignment.
 
 ```
@@ -138,16 +140,16 @@ def review_params
 ```
 Otherwise, this will not work due to Rails protection against mass assignment vulnerability.
 
-###Step 5:
+### Step 5:
 As the record is created in our database, our back end code uses render json to convert the model instance into JSON, and since we have a serializer, Rails implicitly will associate the default UserSerializer to the render, where we can customize the output of the json response being prepared to get sent back to the client via the controller action.
 
 The serializer helps us separate the concerns of our Controller vs. having the controller handle what shouldn't be its responsibility.
 
-###Step 6:
+### Step 6:
 Finally, the JSON response is sent back to the front end, where our code utilizes the .json() to parse the JSON into a JavaScript object for us to handle. 
 
 In this instance using a callback to update our state in a parent component.
 
-###Conclusion
+### Conclusion
 
 As I work towards improving my ability to communicate effectively as a Software Developer, I that there were value information on how the Client-Server relationship works in terms of a form submission that led to a fetch post request!
