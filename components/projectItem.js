@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 
-function projectItem({title, appImage, projectUrl, techStack}) {
+function ProjectItem({title, appImage, projectUrl, techStack}) {
   return (
     <div className='relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl p-4 group hover:bg-gradient-to-r from-green-200 to-[#1DB954]'>
         <Image className='rounded-xl group-hover:opacity-10' src={appImage} alt={title} />
@@ -17,4 +17,4 @@ function projectItem({title, appImage, projectUrl, techStack}) {
 )
 }
 
-export default projectItem
+export default ProjectItem
