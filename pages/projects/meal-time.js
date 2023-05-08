@@ -8,13 +8,13 @@ function MealTime() {
   return (
       <div className='w-full'>
       <div className='w-screen h-[50vh] '>
-        <div className='absolute top-[5%] left-0 w-full h-[50vh] bg-black/70 z-10' />
+        <div className='absolute top-[5%] left-0 w-full h-[50vh] bg-black/70 -z-10' />
         <Image
-          className='absolute top-[5%] z-1 object-scale-down h-[50vh]'
+          className='absolute top-[5%] -z-20 object-scale-down h-[50vh]'
           src={mealTimeImg}
           alt='/'
           />
-        <div className='absolute top-[40%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2'>
+        <div className='absolute top-[40%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white -z-10 p-2'>
           <h2 className='py-2'>Property Finders</h2>
           <h3>React JS / Rails / PostgreSQL / Render</h3>
         </div>
