@@ -15,7 +15,7 @@ function MealTime() {
           alt='/'
           />
         <div className='absolute top-[40%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white -z-10 p-2'>
-          <h2 className='py-2'>Property Finders</h2>
+          <h2 className='py-2'>Meal Time</h2>
           <h3>React JS / Rails / PostgreSQL / Render</h3>
         </div>
       </div>
