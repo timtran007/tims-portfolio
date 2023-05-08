@@ -99,16 +99,24 @@ export default function Navbar() {
                         </p>
                         <div className='flex items-center justify-between my-4 w-full sm:w-[80%]'>
                             <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 eas-in duration-300'>
-                                <FaLinkedinIn />
+                                <Link href='https://www.linkedin.com/in/tim-tran/'>
+                                    <FaLinkedinIn />
+                                </Link>
                             </div>
                             <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 eas-in duration-300'>
-                                <FaGithub />
+                                <Link href='https://github.com/timtran007'>
+                                     <FaGithub />
+                                </Link>
                             </div>
                             <div onClick={handleNav} className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 eas-in duration-300'>
-                                <AiOutlineMail />
+                                <Link href='mailto: timtran007@gmail.com'>
+                                    <AiOutlineMail />
+                                </Link>
                             </div>
                             <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 eas-in duration-300'>
-                                <BsFillPersonLinesFill />
+                                <Link href='https://drive.google.com/file/d/1QPMKOgPWiTOxGdBrE5TPdbwHKGliVZ1L/view?usp=share_link'>
+                                    <BsFillPersonLinesFill />
+                                </Link>
                             </div>
                         </div>
                     </div>

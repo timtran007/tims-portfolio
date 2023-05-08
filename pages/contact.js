@@ -5,18 +5,18 @@ import { FaLinkedin, FaGithub } from 'react-icons/fa';
 import { AiOutlineMail } from 'react-icons/ai';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 import computerImg from '../public/images/computer-2.jpg'
-import Navbar from '../components/navbar';
 import Head from 'next/head';
-import { siteTitle } from '../components/layout';
+import Layout, { siteTitle } from '../components/layout';
+import Link from 'next/link';
 
 function Contact() {
   return (
     <div>
-        <Navbar>
+        <Layout>
             <Head>
                 {siteTitle}
             </Head>
-        </Navbar>
+        </Layout>
         <div className='w-full lg:h-screen'>
             <div className='max-w-[1240px] m-auto px-2 py-16 w-full'>
                 <p className='pt-8 text-xl tracking-widest uppercase text-[#1DB954]'>Contact</p>
@@ -39,16 +39,24 @@ function Contact() {
                                 <p className='uppercase pt-8'>Connect With Me</p>
                                 <div className='flex items-center justify-between py-4'>
                                     <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 eas-in duration-300'>
-                                        <FaLinkedin />
+                                        <Link href='https://www.linkedin.com/in/tim-tran/'>
+                                            <FaLinkedin />
+                                        </Link>
                                     </div>
                                     <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 eas-in duration-300'>
-                                        <FaGithub />
+                                        <Link href='https://github.com/timtran007'>
+                                            <FaGithub />
+                                        </Link>
                                     </div>
                                     <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 eas-in duration-300'>
-                                        <AiOutlineMail />
+                                        <Link href='mailto: timtran007@gmail.com'>
+                                            <AiOutlineMail />
+                                        </Link>
                                     </div>
                                     <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 eas-in duration-300'>
-                                        <BsFillPersonLinesFill />
+                                        <Link href='https://drive.google.com/file/d/1QPMKOgPWiTOxGdBrE5TPdbwHKGliVZ1L/view?usp=share_link'>
+                                            <BsFillPersonLinesFill />
+                                        </Link>
                                     </div>
                                 </div>
                             </div>

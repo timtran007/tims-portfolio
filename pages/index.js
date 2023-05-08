@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { FaLinkedinIn, FaGithub } from 'react-icons/fa'
 import { AiOutlineMail } from 'react-icons/ai'
 import { BsFillPersonLinesFill } from 'react-icons/bs'
+import Link from 'next/link';
 
 
 export default function Home({ allPostsData }) {
@@ -48,16 +49,24 @@ export default function Home({ allPostsData }) {
             </p>
             <div className='flex items-center justify-between max-w-[330px] m-auto py-4'>
               <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 eas-in duration-300'>
-                <FaLinkedinIn />
+                <Link href='https://www.linkedin.com/in/tim-tran/'>
+                  <FaLinkedinIn />
+                </Link>
               </div>
               <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 eas-in duration-300'>
-                <FaGithub />
+                <Link href='https://github.com/timtran007'>
+                  <FaGithub />
+                </Link>
               </div>
               <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 eas-in duration-300'>
-                <AiOutlineMail />
+                <Link href='mailto: timtran007@gmail.com'>
+                    <AiOutlineMail />
+                </Link>
               </div>
               <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 eas-in duration-300'>
+                <Link href='https://drive.google.com/file/d/1QPMKOgPWiTOxGdBrE5TPdbwHKGliVZ1L/view?usp=share_link'>
                 <BsFillPersonLinesFill />
+                </Link>
               </div>
             </div>
           </div>
