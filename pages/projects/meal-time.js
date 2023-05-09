@@ -25,7 +25,7 @@ function MealTime() {
           <p>Project</p>
           <h2>Overview</h2>
           <p>
-            This app was built using React, Ruby on Rails PostgreSQL JSON API database, and is hosted on Render. Users
+            This app was built using React, Ruby on Rails PostgreSQL JSON API database, and is hosted on Render. For the client, test driven development framework was utilized with Jest in order to create the application. Users
             are able to create recipes, add items to shopping list and follow different users. You will
             be able to view detailed recipe information with the ability to edit your own recipes, in addition to 
             deleting. User authentication is available using Rails' BCrypt gem in order to sign in, sign up and log out.
@@ -60,16 +60,16 @@ function MealTime() {
                 <RiRadioButtonFill className='pr-1' /> React
               </p>
               <p className='text-gray-600 py-2 flex items-center'>
-                <RiRadioButtonFill className='pr-1' /> Ruby on Rails
-              </p>
-              <p className='text-gray-600 py-2 flex items-center'>
-                <RiRadioButtonFill className='pr-1' /> Javascript
-              </p>
-              <p className='text-gray-600 py-2 flex items-center'>
-                <RiRadioButtonFill className='pr-1' /> PostgreSQL
+                <RiRadioButtonFill className='pr-1' /> Jest
               </p>
               <p className='text-gray-600 py-2 flex items-center'>
                 <RiRadioButtonFill className='pr-1' /> React Bootstrap
+              </p>
+              <p className='text-gray-600 py-2 flex items-center'>
+                <RiRadioButtonFill className='pr-1' /> Ruby on Rails
+              </p>
+              <p className='text-gray-600 py-2 flex items-center'>
+                <RiRadioButtonFill className='pr-1' /> PostgreSQL
               </p>
               <p className='text-gray-600 py-2 flex items-center'>
                 <RiRadioButtonFill className='pr-1' /> Render
