@@ -6,6 +6,7 @@ import { FaLinkedinIn, FaGithub } from 'react-icons/fa'
 import { AiOutlineMail } from 'react-icons/ai'
 import { BsFillPersonLinesFill } from 'react-icons/bs'
 import Link from 'next/link';
+import profileImg from '/../public/images/tims-profile-pic.jpg'
 
 
 export default function Home({ allPostsData }) {
@@ -27,7 +28,7 @@ export default function Home({ allPostsData }) {
             </h1>
             <Image
               className='py-6 rounded-full h-auto max-w-lg mx-auto'
-              src='/../public/images/tims-profile-pic.jpg'
+              src={profileImg}
               height={200}
               width={200}
               alt="Tim"
