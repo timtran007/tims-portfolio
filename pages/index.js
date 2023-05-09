@@ -65,7 +65,7 @@ export default function Home({ allPostsData }) {
               </div>
               <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 eas-in duration-300'>
                 <Link href='https://drive.google.com/file/d/1QPMKOgPWiTOxGdBrE5TPdbwHKGliVZ1L/view?usp=share_link'>
-                <BsFillPersonLinesFill />
+                  <BsFillPersonLinesFill />
                 </Link>
               </div>
             </div>
