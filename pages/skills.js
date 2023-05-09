@@ -2,6 +2,14 @@ import Head from 'next/head'
 import Image from 'next/image'
 import React from 'react'
 import Layout, { siteTitle } from '../components/layout'
+import reactImg from '../public/images/skills/react.png'
+import jsImg from '../public/images/skills/javascript.png'
+import tailwindImg from '../public/images/skills/tailwind.png'
+import htmlImg from '../public/images/skills/html.png'
+import cssImg from '../public/images/skills/css.png'
+import railsImg from '../public/images/skills/rails.png'
+import rubyImg from '../public/images/skills/ruby.png'
+import postgresqlImg from '../public/images/skills/postgresql.png'
 
 export default function Skills() {
     return (
@@ -20,7 +28,7 @@ export default function Skills() {
                         <div className='grid grid-cols-2 gap-4 justify-center items-center'>
                             <div className='m-auto'>
                                 <Image
-                                    src='/../public/images/skills/react.png'
+                                    src={reactImg}
                                     alt='ReactJS'
                                     width={64}
                                     height={64}
@@ -35,7 +43,7 @@ export default function Skills() {
                         <div className='grid grid-cols-2 gap-4 justify-center items-center'>
                             <div className='m-auto'>
                                 <Image
-                                    src='/../public/images/skills/javascript.png'
+                                    src={jsImg}
                                     alt='JavaScript'
                                     width={64}
                                     height={64}
@@ -50,7 +58,7 @@ export default function Skills() {
                         <div className='grid grid-cols-2 gap-4 justify-center items-center'>
                             <div className='m-auto'>
                                 <Image
-                                    src='/../public/images/skills/tailwind.png'
+                                    src={tailwindImg}
                                     alt='TailwindCSS'
                                     width={64}
                                     height={64}
@@ -65,7 +73,7 @@ export default function Skills() {
                         <div className='grid grid-cols-2 gap-4 justify-center items-center'>
                             <div className='m-auto'>
                                 <Image
-                                    src='/../public/images/skills/html.png'
+                                    src={htmlImg}
                                     alt='HTML5'
                                     width={64}
                                     height={64}
@@ -80,7 +88,7 @@ export default function Skills() {
                         <div className='grid grid-cols-2 gap-4 justify-center items-center'>
                             <div className='m-auto'>
                                 <Image
-                                    src='/../public/images/skills/css.png'
+                                    src={cssImg}
                                     alt='CSS3'
                                     width={64}
                                     height={64}
@@ -95,7 +103,7 @@ export default function Skills() {
                         <div className='grid grid-cols-2 gap-4 justify-center items-center'>
                             <div className='m-auto'>
                                 <Image
-                                    src='/../public/images/skills/rails.png'
+                                    src={railsImg}
                                     alt='Ruby on Rails'
                                     width={64}
                                     height={64}
@@ -110,7 +118,7 @@ export default function Skills() {
                         <div className='grid grid-cols-2 gap-4 justify-center items-center'>
                             <div className='m-auto'>
                                 <Image
-                                    src='/../public/images/skills/ruby.png'
+                                    src={rubyImg}
                                     alt='Ruby'
                                     width={64}
                                     height={64}
@@ -125,7 +133,7 @@ export default function Skills() {
                         <div className='grid grid-cols-2 gap-4 justify-center items-center'>
                             <div className='m-auto'>
                                 <Image
-                                    src='/../public/images/skills/postgresql.png'
+                                    src={postgresqlImg}
                                     alt='PostgreSQL'
                                     width={64}
                                     height={64}

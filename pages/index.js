@@ -6,7 +6,7 @@ import { FaLinkedinIn, FaGithub } from 'react-icons/fa'
 import { AiOutlineMail } from 'react-icons/ai'
 import { BsFillPersonLinesFill } from 'react-icons/bs'
 import Link from 'next/link';
-import profileImg from '/../public/images/tims-profile-pic.jpg'
+import profileImg from '../public/images/tims-profile-pic.jpg'
 
 
 export default function Home({ allPostsData }) {
