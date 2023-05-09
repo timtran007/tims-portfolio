@@ -1,4 +1,8 @@
 import React from 'react'
+import Image from 'next/image'
+import tripSaveImg from '../../public/images/projects/trip-save.png'
+import { RiRadioButtonFill } from 'react-icons/ri';
+import Link from 'next/link'
 
 function TripSave() {
   return (
@@ -7,7 +11,7 @@ function TripSave() {
         <div className='absolute top-[5%] left-0 w-full h-[50vh] bg-black/70 -z-10' />
         <Image
           className='absolute top-[5%] -z-20 object-scale-down h-[50vh]'
-          src={mealTimeImg}
+          src={tripSaveImg}
           alt='/'
           />
         <div className='absolute top-[40%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white -z-10 p-2'>
