@@ -51,6 +51,7 @@ function MealTime() {
             >
             <button className='px-8 py-2 mt-4'>Live Site</button>
           </a>
+          <p className='pt-16'>*The live site is hosted by Render's free hosting service, so it may take a couple of minutes to start</p>
         </div>
         <div className='col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl py-4'>
           <div className='p-2'>
